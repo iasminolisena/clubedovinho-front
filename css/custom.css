@@ -1,9 +1,21 @@
 html, body{
     height: 100%;
 }
+
 body.login div{
     height: 100vh;
     width: ;
     display: flex;
     align-items: center;
+}
+
+.btn-wine{
+    background-color: #940E0F;
+    color: white;
+    border: 1px solid #940E0F;
+}
+
+.btn-wine:hover{
+    background-color: #62090A;
+    color: white;
 }
