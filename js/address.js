@@ -12,6 +12,7 @@ INPUT_CEP.addEventListener('blur', () => {
     }
     let url = `https://viacep.com.br/ws/${INPUT_CEP.value}/json/`;
 
+//`XMLHttpRequest`
     fetch(url)
         .then(res => res.json())
         .then(endereco => {
@@ -19,6 +20,35 @@ INPUT_CEP.addEventListener('blur', () => {
             INPUT_BAIRRO.value = endereco.bairro;
             INPUT_CIDADE.value = endereco.localidade;
             INPUT_UF.value = endereco.uf;
+
+            INPUT_NUMERO.focus();
         });
 
 });
+
+function checkInputs(inputs) {
+    var preenchida = true;
+    
+    inputs.forEach((input) => {
+        
+      if(input.value === "") {
+          preenchida = false;
+      }
+    
+    });
+    
+    return preenchida;
+    
+  }
+  var inputs = document.querySelectorAll("input");
+  var button = document.querySelector("button");
+  inputs.forEach((input) => {
+      
+    input.addEventListener("keyup", () => {
+      if(checkInputs(inputs)) {
+        button.disabled = false;
+      } else {
+        button.disabled = true;
+      }
+    });
+  });

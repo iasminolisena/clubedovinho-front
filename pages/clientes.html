@@ -37,8 +37,50 @@
 
         <h2>Clientes</h2>
 
+        <div class="text-end">
+            <a class="btn btn-wine" href="add-client.html">Novo Cliente</a>
+        </div>
+    
+        <section class="card card-body mt-3">
+            <table class="table table-hover table-striped">
+                <thead class="table-dark">
+                    <tr>
+                        <th id="id">#ID</th>
+                        <th id="nome">Nome</th>
+                        <th id="email">Email</th>
+                        <th id="telefone">Telefone</th>
+                        <th id="foto">Foto</th>
+                        <th id="data_cadastro">Data Cadastro</th>
+                        <th id="data_ultimo_pedido">Data Último Pedido</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="table-client">
+                </tbody>
+            </table>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="modal_produto_nome">Modal title</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" id="modal_produto_foto">
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="card card-body"></section>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="../js/client.js"></script>
     </body>
 </html>
