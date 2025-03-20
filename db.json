@@ -1,0 +1,44 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Quinta do Morgado",
+      "category": "Vinho Suave",
+      "image": "https://cdn.dooca.store/197/products/vinho-quinta-do-morgado-tinto-suave-750-ml.jpg?v=1665008400&webp=0",
+      "quantity": 12,
+      "price": 10.89
+    },
+    {
+      "id": "2",
+      "name": "Vale Dom Bento",
+      "category": "Vinho Suave",
+      "image": "https://cdn.awsli.com.br/1958/1958204/produto/203245775/screenshot_20230223_190651_instagram-pamtvr.jpg",
+      "quantity": 24,
+      "price": 9.9
+    },
+    {
+      "id": "33a6",
+      "name": "Pérgola",
+      "price": "25.3",
+      "category": "Vinho suave",
+      "quantity": "20",
+      "image": "https://www.imigrantesbebidas.com.br/bebida/images/products/full/7633-vinho-pergola-tinto-suave-1l.jpg"
+    },
+    {
+      "id": "9336",
+      "name": "O gaucho",
+      "price": "25.90",
+      "category": "Vinho suave",
+      "quantity": "10",
+      "image": "https://a-static.mlcdn.com.br/800x560/vinho-o-gaucho-tinto-suave-700ml-o-gaucho/shoppingdouniverso/10793495936/0512b8d1c895d359276fbe854b65ccde.jpeg"
+    },
+    {
+      "id": "fd91",
+      "name": "Casal Garcia",
+      "price": "84.51",
+      "category": "Vinho rosê",
+      "quantity": "25",
+      "image": "https://taafrl.vtexassets.com/arquivos/ids/159986/casal-garcia-rose-750ml.jpg?v=637932471357830000"
+    }
+  ]
+}
