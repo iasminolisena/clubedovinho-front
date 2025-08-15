@@ -78,4 +78,16 @@ function addProduct(){
     document.getElementById('form').requestFullscreen();
     alert('Produto cadastrado com sucesso');
     listar();
+
+    document.addEventListener('DOMContentLoaded', function () {
+      new TomSelect('#category', {
+        placeholder: 'Selecione ou digite uma categoria',
+        create: true,
+        sortField: {
+          field: 'text',
+          direction: 'asc'
+        }
+      });
+    });
+    
 }
